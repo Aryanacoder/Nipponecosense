@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - NipponEcosense</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body {
+            background-color: #00425c;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        #nav {
+            height: 130px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 120px;
+            gap: 50px;
+            position: fixed;
+            justify-content: flex-start;
+            z-index: 999;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        #nav img {
+            height: 50px;
+        }
+
+        #nav a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        #nav a:hover, #nav a.active {
+            color: #1e90ff;
+        }
+
+        .video-section {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .video-section video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .video-section h1 {
+            font-size: 10em;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .career-section {
+            padding: 50px 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin: 150px auto 50px;
+            max-width: 900px;
+            text-align: left;
+        }
+
+        .career-section h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .career-section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .career-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .career-section li {
+            margin-bottom: 15px;
+        }
+
+        .career-section li::before {
+            content: "•";
+            color: #1e90ff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .internship-section {
+            background-color: #000000;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            color: #fff;
+        }
+
+        .internship-section .content {
+            max-width: 60%;
+        }
+
+        .internship-section .content h2 {
+            color: #1e90ff;
+            margin-bottom: 10px;
+        }
+
+        .internship-section .content p {
+            margin-bottom: 20px;
+        }
+
+        .internship-section img {
+            max-width: 35%;
+            border-radius: 10px;
+        }
+
+        .internship-section .apply-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1e90ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+
+        .internship-section .apply-button:hover {
+            background-color: #ffffff;
+        }
+
+        .form-section {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        .form-section h2 {
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-section form label {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .form-section form input,
+        .form-section form textarea,
+        .form-section form select {
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+        }
+
+        .form-section form button {
+            padding: 10px 20px;
+            background-color: #000000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-section form button:hover {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <a href="index.html"><img src="nippologoure.PNG" alt="NipponEcosense Logo"></a>
+        <a href="about.html"><h4>About Us</h4></a>
+        <a href="projects.html"><h4>Projects</h4></a>
+        <a href="technology.html"><h4>Technology</h4></a>
+        <a href="partners.html"><h4>Partners</h4></a>
+        <a href="careers.html" class="active"><h4>Careers</h4></a>
+        <a href="contact.html"><h4>Contact</h4></a>
+    </div>
+    <div class="video-section">
+        <video autoplay loop muted>
+            <source src="4434068-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>Join Us</h1>
+    </div>
+    <div class="career-section">
+        <h1>Careers</h1>
+        <p>At NipponEcosense, we are always looking for passionate and talented individuals to join our team. If you are committed to making a positive impact on the environment and have the skills to match, we would love to hear from you.</p>
+        <p>Current Openings:</p>
+        <ul>
+            <li><strong>Environmental Scientist</strong> - Responsible for conducting research and developing strategies to reduce carbon emissions.</li>
+            <li><strong>Software Engineer</strong> - Work on developing and maintaining our environmental data analytics platforms.</li>
+            <li><strong>Project Manager</strong> - Oversee and coordinate various environmental projects and initiatives.</li>
+            <li><strong>Marketing Specialist</strong> - Help us spread the word about our mission and projects through various marketing channels.</li>
+        </ul>
+        <p>If you are interested in any of the positions listed above, please send your resume and cover letter to careers@nipponecosense.com.</p>
+        <p>We look forward to having you join our mission to create a sustainable future!</p>
+    </div>
+    <div class="internship-section">
+        <div class="content">
+            <h2>Internship Program</h2>
+            <p>Elevate your career to new heights with our pioneers! Dive into the world of satellite analytics with our dynamic internship program, designed to give you hands-on experience in earth observation and data analysis. As an intern, you’ll be part of a team that’s pushing the boundaries of what’s possible from space, working on real projects that matter. Learn from industry experts, apply your knowledge to solve complex problems, and contribute to research that’s changing our understanding of the planet. Whether you’re coding algorithms or interpreting satellite imagery, join us for an internship where your ambition meets our mission, and together, we’ll explore the final frontier of data analytics.</p>
+            <a href="#internship-form" class="apply-button">Apply Here</a>
+        </div>
+        <img src="pexels-tirachard-kumtanom-112571-601170.jpg" alt="Internship Image">
+    </div>
+    <div class="form-section" id="internship-form">
+        <h2>Apply for Internship</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="position">Position Applied For:</label>
+            <select id="position" name="position" required>
+                <option value="environmental_scientist">Environmental Scientist</option>
+                <option value="software_engineer">Software Engineer</option>
+                <option value="project_manager">Project Manager</option>
+                <option value="marketing_specialist">Marketing Specialist</option>
+                <option value="intern">Intern</option>
+            </select>
+            
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+            
+            <label for="cover_letter">Cover Letter:</label>
+            <textarea id="cover_letter" name="cover_letter" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

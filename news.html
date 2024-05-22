@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - NipponEcosense</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+            background-color: #001f3f;
+            scroll-behavior: smooth;
+        }
+
+        body::-webkit-scrollbar {
+            width: 8px;
+            background: #001f3f;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: #fff;
+            border-radius: 50px;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        #nav {
+            height: 130px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 120px;
+            gap: 50px;
+            position: fixed;
+            justify-content: flex-start;
+            z-index: 999;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        #nav img {
+            height: 50px;
+        }
+
+        #nav a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        #nav a:hover, #nav a.active {
+            color: #1e90ff;
+        }
+
+
+        .content {
+            padding: 65px 65px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #1e90ff;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .news-section {
+            background-color: #007b8f;
+            padding: 50px 20px;
+        }
+
+        .news-section h1 {
+            font-size: 6em;
+            margin-bottom: 40px;
+            color: #020202;
+            text-align: center;
+        }
+
+        .news-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .news-card {
+            background-color: #fff;
+            color: #000;
+            width: 15%;
+            display: flex;
+            flex-direction:column;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .news-card img {
+            width: 100%;
+            height:auto;
+        }
+
+        .news-content {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .news-content h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .news-content p {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .news-content a {
+            text-decoration: none;
+            color: #1e90ff;
+            font-weight: bold;
+        }
+
+        .news-date {
+            font-size: 0.9em;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+        <div id="nav">
+            <a href="index.html"><img src="nippologoure.PNG" alt="NipponEcosense Logo"></a>
+            <a href="about.html"><h4>About Us</h4></a>
+            <a href="projects.html"><h4>Projects</h4></a>
+            <a href="technology.html"><h4>Technology</h4></a>
+            <a href="partners.html" class="active"><h4>Partners</h4></a>
+            <a href="careers.html"><h4>Careers</h4></a>
+            <a href="contact.html"><h4>Contact</h4></a>
+        </div>
+       
+    
+    <div class="content">    
+    </div>
+    <div class="news-section" id="news">
+        <h1>News</h1>
+        <div class="news-container">
+            <div class="news-card">
+                <img src="hannah-busing-Zyx1bK9mqmA-unsplash.jpg" alt="News Image 1">
+                <div class="news-content">
+                    <div class="news-date">Nov 12</div>
+                    <h2>Meet The Community Voices Fellows</h2>
+                    <p>Eti in aliqua incididunt fugiat proident excepteur magna. Labore eiusmod magna duis tempor labo.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="jose-antonio-gallego-vazquez-q5DNjRaAJo4-unsplash.jpg" alt="News Image 2">
+                <div class="news-content">
+                    <div class="news-date">Nov 08</div>
+                    <h2>Earthquakes Struck the Heart of the World's Largest</h2>
+                    <p>In et ex et tempor aliquip veniam id deserunt anim ut ex labore id nisi tempor. Ut minim fugiat.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="emma-simpson-mNGaaLeWEp0-unsplash.jpg" alt="News Image 3">
+                <div class="news-content">
+                    <div class="news-date">Nov 08</div>
+                    <h2>Take 10 for privacy and mental health</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisi est, facilisis ac tellus ac, egestas hendrerit magna.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="michael-jerrard-JnLp1kus3Ks-unsplash.jpg" alt="News Image 4">
+                <div class="news-content">
+                    <div class="news-date">Nov 05</div>
+                    <h2>How to help Turkey, Syria: Relief efforts ongoing after earthquakes</h2>
+                    <p>Occaecat aliqua incididunt anim fugiat nostrud non. Consectetur elit magna proident sunt nostrud ad eiusmod.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Contact us at:</p>
+            <p>Phone: (+81)-80-4006-6213 | Email: info@nipponecosense.com</p>
+            <p>Open Innovation Hub "ENERGIO", Hokkaido University, N18W8 Kita-ku, Sapporo, Japan 060-0808</p>
+            <p>
+                <a href="about.html">About us</a> |
+                <a href="careers.html">Careers</a> |
+                <a href="projects.html">Projects</a> |
+                <a href="partners.html">For Research Partners</a> |
+                <a href="technology.html">Our Tech</a>
+            </p>
+            <p>
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </p>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
